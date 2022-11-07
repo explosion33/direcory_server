@@ -1,0 +1,110 @@
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.project {
+  margin-bottom: 16px;
+}
+
+.box {
+  background-color: #1c1d1e;
+  box-shadow: 7px 7px 20px 0px  rgba(0,0,0,0.3);
+  transition: all .1s ease-in-out;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.item-padding {
+  margin-bottom: 125px;
+}
+
+.link {
+  color: #ffffff4d;
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+
+.link:hover {
+  color: #ffffffb5;
+}
+
+h3 {
+  padding-top: 16px;
+}
+
+.copied {
+  margin-bottom: 0px;
+}
+
+.slide-up {
+  animation: 0.4s slide-up;
+  translate: 0px 5px
+}
+
+@keyframes slide-up {
+  from {
+    translate: 0px 20px
+  }
+
+  to {
+    translate: 0px 5px
+  }
+}
+
+.fade-out {
+  translate: 0px 5px;
+  animation: 0.8s fade_out;
+  opacity: 0;
+}
+
+@keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box:hover {
+    transform: scale(1.03);
+  }
+}
+
+
+.md-lg-off {
+  display: none;
+}
+
+.md-lg {
+  display: flex;
+}
+
+@media only screen and (min-width: 1200px) {
+  .md-lg-off {
+    display: flex;
+  }
+  
+  .md-lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .md-lg-off {
+    display: flex;
+  }
+  
+  .md-lg {
+    display: none;
+  }
+}
+
